@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YelpCamp</title>
+    <link rel="stylesheet" href="/stylesheets/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body class="d-flex text-center text-white bg-dark"> 
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+            <div class="">
+                <h3 class="float-md-left mb-0">YelpCamp</h3>
+                <nav class="nav nav-masthead justify-content-center float-md-right">
+                    <a href="#" class="nav-link active" aria-current="page">Home</a>
+                    <a href="/campgrounds" class="nav-link">Campgrounds</a>
+                    <% if(!currentUser) { %> 
+                        <a href="/login" class="nav-link">Login</a>
+                        <a href="/register" class="nav-link">Register</a>
+                    <% } else { %> 
+                        <a href="/logout" class="nav-link">Logout</a>
+                    <% } %> 
+                </nav>
+            </div>
+        </header>
+        <main class="px-3">
+            <!-- <h1>YelpCamp</h1> -->
+            <p class="lead">Welcome to YelpCamp <br> Jump right in and explore some campgrounds. Feel free to share some of your own and comment on others!</p>
+            <a href="/campgrounds" class="btn btn-lg btn-secondary font-weight-bold text-white">View Campgrounds</a>
+        </main>
+        
+        <footer class="mt-auto text-white-50">
+            <p>&copy; 2022 YelpCamp</p>
+        </footer>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+</html>

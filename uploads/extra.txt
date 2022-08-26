@@ -1,0 +1,3 @@
+// mongodb://bugger69:<password>@ac-h4k6s0l-shard-00-00.fvmfk2x.mongodb.net:27017,ac-h4k6s0l-shard-00-01.fvmfk2x.mongodb.net:27017,ac-h4k6s0l-shard-00-02.fvmfk2x.mongodb.net:27017/?ssl=true&replicaSet=atlas-ta4e5r-shard-0&authSource=admin&retryWrites=true&w=majority
+
+// NlufoR9yoVeLx5Cz
